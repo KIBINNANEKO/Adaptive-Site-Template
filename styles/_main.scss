@@ -92,6 +92,8 @@ header {
 	width: 100%;
 	min-height: 90px;
 	padding-top: 30px;
+	position: fixed;
+	z-index: 100;
 	*{
 		font-size: 15px;
 		white-space: nowrap;
@@ -485,6 +487,10 @@ header {
 /*---------------------------------------------------B5----------------------------------------------------*/
 
 .b5_wc {
+	background: #000;
+	overflow: hidden;
+	max-height: 700px;
+	padding-bottom: 100px;
 	img{
 		position: relative;
 		top: 0px;
@@ -509,6 +515,52 @@ header {
 		position: relative;
 		bottom: 300px;
 		@include adaptiv-value("left", 1580, 50, 0);
+	}
+
+}
+
+/*---------------------------------------------------B6----------------------------------------------------*/
+
+.b6_wc {
+	background-color: #000;
+	@include adaptiv-value("min-height", 500, 400, 0);
+	img{
+		max-width:100%;
+      height:auto;
+	}
+
+	h4{
+		@include adaptiv-value("font-size", 40, 30, 0);
+		line-height: 42px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 15px;
+	}
+	h5{
+		@include adaptiv-value("font-size", 24, 18, 0);
+		line-height: 30px;
+		text-align: center;
+		color: #C0C0C0;
+	}
+
+	.clients_logos {
+		display: flex;
+		@include adaptiv-value("margin-top", 100, 30, 0);
+
+		justify-content: center;
+		gap: 20px;
+		*{
+			flex: 0 1 15%;
+			align-self:flex-end;
+			min-width: 101px;
+		}
+	}
+
+	@media (max-width: 714.98px){
+		.clients_logos {
+			flex-wrap:wrap;
+			flex: 0 1 30%;
+		}
 	}
 
 }

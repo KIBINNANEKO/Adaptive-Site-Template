@@ -137,6 +137,8 @@ header {
   width: 100%;
   min-height: 90px;
   padding-top: 30px;
+  position: fixed;
+  z-index: 100;
   /*---------------------------------------------------HEADER_MENU----------------------------------------------------*/
 }
 header * {
@@ -476,6 +478,12 @@ header .menu li {
 }
 
 /*---------------------------------------------------B5----------------------------------------------------*/
+.b5_wc {
+  background: #000;
+  overflow: hidden;
+  max-height: 700px;
+  padding-bottom: 100px;
+}
 .b5_wc img {
   position: relative;
   top: 0px;
@@ -498,4 +506,44 @@ header .menu li {
   position: relative;
   bottom: 300px;
   left: calc(50px + 1530 * ((100vw - 375px) / 1545));
+}
+
+/*---------------------------------------------------B6----------------------------------------------------*/
+.b6_wc {
+  background-color: #000;
+  min-height: calc(400px + 100 * ((100vw - 375px) / 1545));
+}
+.b6_wc img {
+  max-width: 100%;
+  height: auto;
+}
+.b6_wc h4 {
+  font-size: calc(30px + 10 * ((100vw - 375px) / 1545));
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.b6_wc h5 {
+  font-size: calc(18px + 6 * ((100vw - 375px) / 1545));
+  line-height: 30px;
+  text-align: center;
+  color: #C0C0C0;
+}
+.b6_wc .clients_logos {
+  display: flex;
+  margin-top: calc(30px + 70 * ((100vw - 375px) / 1545));
+  justify-content: center;
+  gap: 20px;
+}
+.b6_wc .clients_logos * {
+  flex: 0 1 15%;
+  align-self: flex-end;
+  min-width: 101px;
+}
+@media (max-width: 714.98px) {
+  .b6_wc .clients_logos {
+    flex-wrap: wrap;
+    flex: 0 1 30%;
+  }
 }
