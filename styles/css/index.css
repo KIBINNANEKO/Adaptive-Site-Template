@@ -283,7 +283,7 @@ header .menu li {
   object-position: 30% 70%;
 }
 .b_1wc h2 {
-  margin-top: calc(100px + 443 * ((100vw - 375px) / 1545));
+  margin-top: calc(200px + 343 * ((100vw - 375px) / 1545));
   font-size: calc(12px + 2 * ((100vw - 375px) / 1545));
   line-height: calc(0px + 20 * ((100vw - 375px) / 1545));
   text-transform: uppercase;
@@ -339,7 +339,7 @@ header .menu li {
   }
 }
 .b2_wc h3 {
-  font-size: calc(17px + 6 * ((100vw - 375px) / 1545));
+  font-size: calc(15px + 8 * ((100vw - 375px) / 1545));
   line-height: 30px;
   margin-top: 15px;
 }
@@ -363,45 +363,49 @@ header .menu li {
   gap: 16px;
 }
 .b2_wc .block_in_card {
-  position: relative;
+  position: absolute;
   max-width: 576px;
   min-width: 275px;
   text-align: left;
-  bottom: 220px;
+  bottom: 10px;
   margin: 0px 25px;
 }
 .b2_wc .card {
   max-width: 576px;
   min-width: 344px;
   max-height: 600px;
-  min-height: 400px;
+  min-height: 500px;
   flex: 0 1 48%;
+  position: relative;
 }
 .b2_wc .card img {
   object-fit: cover;
+  object-position: top;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 819.98px) {
+  .b2_wc .block_in_card {
+    bottom: 50px;
+  }
 }
 @media (max-width: 820px) {
   .b2_wc .card p {
     font-size: 12px;
-  }
-  .b2_wc .card img {
-    height: 90%;
   }
 }
 
 /*---------------------------------------------------B3----------------------------------------------------*/
 .b3_wc {
   background-color: #000;
-  height: calc(500px + 100 * ((100vw - 375px) / 1545));
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
 }
 .b3_wc img {
   position: relative;
   top: 0px;
   left: 0px;
   object-fit: cover;
-  height: calc(500px + 100 * ((100vw - 375px) / 1545));
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
   width: 100%;
   z-index: 0;
   overflow: hidden;
@@ -413,7 +417,7 @@ header .menu li {
   color: #C0C0C0;
   z-index: 1;
   height: 60px;
-  left: calc(20px + 1560 * ((100vw - 375px) / 1545));
+  left: calc(40px + 1540 * ((100vw - 375px) / 1545));
   bottom: 310px;
   display: inline-block;
 }
@@ -482,7 +486,6 @@ header .menu li {
   background: #000;
   overflow: hidden;
   max-height: 700px;
-  padding-bottom: 100px;
 }
 .b5_wc img {
   position: relative;
@@ -511,7 +514,7 @@ header .menu li {
 /*---------------------------------------------------B6----------------------------------------------------*/
 .b6_wc {
   background-color: #000;
-  min-height: calc(400px + 100 * ((100vw - 375px) / 1545));
+  min-height: calc(375px + 125 * ((100vw - 375px) / 1545));
 }
 .b6_wc img {
   max-width: 100%;
@@ -532,7 +535,7 @@ header .menu li {
 }
 .b6_wc .clients_logos {
   display: flex;
-  margin-top: calc(30px + 70 * ((100vw - 375px) / 1545));
+  margin-top: calc(40px + 60 * ((100vw - 375px) / 1545));
   justify-content: center;
   gap: 20px;
 }

@@ -266,7 +266,7 @@ header {
 	}
 
 	h2{
-		@include adaptiv-value("margin-top", 543, 100, 0);
+		@include adaptiv-value("margin-top", 543, 200, 0);
 		@include adaptiv-value("font-size", 14, 12, 0);
 		@include adaptiv-value("line-height", 20, 0, 0);
 		text-transform: uppercase;
@@ -319,7 +319,7 @@ header {
 		line-height: 42px;
 	}
 	h3{
-		@include adaptiv-value("font-size", 23, 17, 0);
+		@include adaptiv-value("font-size", 23, 15, 0);
 		line-height: 30px;
 		margin-top: 15px;
 	}
@@ -347,11 +347,11 @@ header {
 	}
 
 	.block_in_card {
-		position: relative;
+		position: absolute;
 		max-width: 576px;
 		min-width: 275px;
 		text-align: left;
-		bottom: 220px;
+		bottom: 10px;
 		margin: 0px 25px;
 	}
 
@@ -359,17 +359,22 @@ header {
 		max-width: 576px;
 		min-width: 344px;
 		max-height: 600px;
-		min-height: 400px;
+		min-height: 500px;
 		flex: 0 1 48%;
+		position: relative;
 
 		img{
 			object-fit: cover;
+			object-position: top;
 			width: 100%;
 			height: 100%;
 		}
 	}
 
-	@media (max-width: 743.98px){
+	@media (max-width: 819.98px){
+		.block_in_card {
+			bottom: 50px;
+		}
 
 	}
 
@@ -377,9 +382,6 @@ header {
 		.card{
 			p{
 				font-size: 12px;
-			}
-			img{
-				height: 90%;
 			}
 		}
 	}
@@ -389,13 +391,13 @@ header {
 
 .b3_wc{
 	background-color: #000;
-	@include adaptiv-value("height", 600, 500, 0);
+	@include adaptiv-value("height", 600, 450, 0);
 	img{
 		position: relative;
 		top: 0px;
 		left: 0px;
 		object-fit: cover;
-		@include adaptiv-value("height", 600, 500, 0);
+		@include adaptiv-value("height", 600, 450, 0);
 		width: 100%;
 		z-index: 0;
 		overflow: hidden;
@@ -408,7 +410,7 @@ header {
 		color:#C0C0C0;
 		z-index: 1;
 		height: 60px;
-		@include adaptiv-value("left", 1580, 20, 0);
+		@include adaptiv-value("left", 1580, 40, 0);
 		bottom: 310px;
 		display:inline-block;
 	}
@@ -490,7 +492,6 @@ header {
 	background: #000;
 	overflow: hidden;
 	max-height: 700px;
-	padding-bottom: 100px;
 	img{
 		position: relative;
 		top: 0px;
@@ -501,7 +502,7 @@ header {
 		z-index: 0;
 		overflow: hidden;
 		object-position: center;
-	}
+		}
 	
 	p{
 		@include adaptiv-value("font-size", 14, 12, 0);
@@ -523,7 +524,7 @@ header {
 
 .b6_wc {
 	background-color: #000;
-	@include adaptiv-value("min-height", 500, 400, 0);
+	@include adaptiv-value("min-height", 500, 375, 0);
 	img{
 		max-width:100%;
       height:auto;
@@ -545,7 +546,7 @@ header {
 
 	.clients_logos {
 		display: flex;
-		@include adaptiv-value("margin-top", 100, 30, 0);
+		@include adaptiv-value("margin-top", 100, 40, 0);
 
 		justify-content: center;
 		gap: 20px;
