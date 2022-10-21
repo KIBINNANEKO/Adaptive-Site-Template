@@ -181,8 +181,8 @@ header .menu_flex_list_navigation {
   margin-top: 150px;
 }
 header .menu_flex_list_navigation a {
-  color: #ffffff;
   font-size: calc(20px + 15 * ((100vw - 375px) / 1545));
+  color: #ffffff;
 }
 header .menu_flex_list_navigation li {
   margin-bottom: 40px;
@@ -272,12 +272,12 @@ header .menu li {
   text-align: center;
 }
 .b_1wc .phone_img {
+  height: calc(500px + 446 * ((100vw - 375px) / 1545));
   position: absolute;
   top: 90px;
   left: 0px;
   object-fit: cover;
   width: 100%;
-  height: calc(500px + 446 * ((100vw - 375px) / 1545));
   z-index: -1;
   overflow: hidden;
   object-position: 30% 70%;
@@ -294,9 +294,9 @@ header .menu li {
   line-height: calc(54.25px + 25.75 * ((100vw - 375px) / 1545));
 }
 .b_1wc p {
-  color: #C0C0C0;
   font-size: calc(12px + 2 * ((100vw - 375px) / 1545));
   line-height: calc(15px + 10 * ((100vw - 375px) / 1545));
+  color: #C0C0C0;
   max-width: 580px;
   display: inline-block;
 }
@@ -318,10 +318,10 @@ header .menu li {
 
 /*---------------------------------------------------B2----------------------------------------------------*/
 .b2_wc {
+  padding-bottom: 100px;
   background: #000;
   color: white;
   text-align: center;
-  padding-bottom: 100px;
 }
 @media (max-width: 1200px) {
   .b2_wc {
@@ -397,28 +397,29 @@ header .menu li {
 
 /*---------------------------------------------------B3----------------------------------------------------*/
 .b3_wc {
+  height: calc(350px + 250 * ((100vw - 375px) / 1545));
+  position: relative;
   background-color: #000;
-  height: calc(450px + 150 * ((100vw - 375px) / 1545));
 }
 .b3_wc img {
+  height: calc(350px + 250 * ((100vw - 375px) / 1545));
   position: relative;
   top: 0px;
   left: 0px;
   object-fit: cover;
-  height: calc(450px + 150 * ((100vw - 375px) / 1545));
   width: 100%;
   z-index: 0;
   overflow: hidden;
   object-position: center;
 }
 .b3_wc .b3_block {
+  left: calc(40px + 1540 * ((100vw - 375px) / 1545));
   max-width: 298px;
-  position: relative;
+  position: absolute;
   color: #C0C0C0;
   z-index: 1;
   height: 60px;
-  left: calc(40px + 1540 * ((100vw - 375px) / 1545));
-  bottom: 310px;
+  bottom: 250px;
   display: inline-block;
 }
 .b3_wc h4 {
@@ -485,14 +486,15 @@ header .menu li {
 .b5_wc {
   background: #000;
   overflow: hidden;
-  max-height: 700px;
+  max-height: 600px;
+  position: relative;
 }
 .b5_wc img {
+  height: calc(500px + 100 * ((100vw - 375px) / 1545));
   position: relative;
   top: 0px;
   left: 0px;
   object-fit: cover;
-  height: calc(500px + 100 * ((100vw - 375px) / 1545));
   width: 100%;
   z-index: 0;
   overflow: hidden;
@@ -506,15 +508,21 @@ header .menu li {
   margin-top: 5px;
 }
 .b5_wc .b5_text {
-  position: relative;
-  bottom: 300px;
   left: calc(50px + 1530 * ((100vw - 375px) / 1545));
+  position: absolute;
+  bottom: 200px;
+}
+@media (max-width: 456px) {
+  .b5_wc .b5_text {
+    text-align: center;
+  }
 }
 
 /*---------------------------------------------------B6----------------------------------------------------*/
 .b6_wc {
-  background-color: #000;
   min-height: calc(375px + 125 * ((100vw - 375px) / 1545));
+  padding-top: calc(50px + 60 * ((100vw - 375px) / 1545));
+  background-color: #000;
 }
 .b6_wc img {
   max-width: 100%;
@@ -534,8 +542,8 @@ header .menu li {
   color: #C0C0C0;
 }
 .b6_wc .clients_logos {
-  display: flex;
   margin-top: calc(40px + 60 * ((100vw - 375px) / 1545));
+  display: flex;
   justify-content: center;
   gap: 20px;
 }
@@ -550,3 +558,36 @@ header .menu li {
     flex: 0 1 30%;
   }
 }
+
+/*---------------------------------------------------B7----------------------------------------------------*/
+.b7_wc img {
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
+  position: relative;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  object-position: center;
+}
+.b7_wc p {
+  margin-top: 5px;
+}
+.b7_wc .b7_c {
+  position: relative;
+}
+.b7_wc .b7_text {
+  left: calc(75px + 1125 * ((100vw - 375px) / 1545));
+  position: absolute;
+  bottom: 250px;
+  width: 261px;
+  color: #C0C0C0;
+}
+@media (max-width: 456px) {
+  .b7_wc .b7_text {
+    text-align: center;
+  }
+}
+
+/*---------------------------------------------------B8----------------------------------------------------*/

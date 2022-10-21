@@ -94,6 +94,7 @@ header {
 	padding-top: 30px;
 	position: fixed;
 	z-index: 100;
+
 	*{
 		font-size: 15px;
 		white-space: nowrap;
@@ -142,8 +143,8 @@ header {
 		margin-top: 150px;
 		
 		a{
-			color: #ffffff;
 			@include adaptiv-value("font-size", 35, 20, 0);
+			color: #ffffff;
 		}
 
 		li{
@@ -253,13 +254,14 @@ header {
 .b_1wc {
 	color: white;
 	text-align: center;
+
 	.phone_img {
+		@include adaptiv-value("height", 946, 500, 0);
 		position: absolute;
 		top: 90px;
 		left: 0px;
 		object-fit: cover;
 		width: 100%;
-		@include adaptiv-value("height", 946, 500, 0);
 		z-index: -1;
 		overflow: hidden;
 		object-position: 30% 70%;
@@ -279,9 +281,9 @@ header {
 	}
 
 	p{
-		color: #C0C0C0;
 		@include adaptiv-value("font-size", 14, 12, 0);
 		@include adaptiv-value("line-height", 25, 15, 0);
+		color: #C0C0C0;
 		max-width: 580px;
 		display: inline-block;
 	}
@@ -309,10 +311,11 @@ header {
 /*---------------------------------------------------B2----------------------------------------------------*/
 
 .b2_wc {
+	@include adaptiv-value("padding-bottom", 100, 20, 1);
 	background: #000;
 	color: white;
 	text-align: center;
-	@include adaptiv-value("padding-bottom", 100, 20, 1);
+
 	h2{
 		@include adaptiv-value("margin-top", 150, 225, 1);
 		@include adaptiv-value("font-size", 40, 29.5, 0);
@@ -390,14 +393,16 @@ header {
 /*---------------------------------------------------B3----------------------------------------------------*/
 
 .b3_wc{
+	@include adaptiv-value("height", 600, 350, 0);
+	position: relative;
 	background-color: #000;
-	@include adaptiv-value("height", 600, 450, 0);
+
 	img{
+		@include adaptiv-value("height", 600, 350, 0);
 		position: relative;
 		top: 0px;
 		left: 0px;
 		object-fit: cover;
-		@include adaptiv-value("height", 600, 450, 0);
 		width: 100%;
 		z-index: 0;
 		overflow: hidden;
@@ -405,13 +410,13 @@ header {
 	}
 
 	.b3_block{
+		@include adaptiv-value("left", 1580, 40, 0);
 		max-width: 298px;
-		position: relative;
+		position: absolute;
 		color:#C0C0C0;
 		z-index: 1;
 		height: 60px;
-		@include adaptiv-value("left", 1580, 40, 0);
-		bottom: 310px;
+		bottom: 250px;
 		display:inline-block;
 	}
 
@@ -439,6 +444,7 @@ header {
 	max-height: 540px;
 	overflow: hidden;
 	display: flex;
+
 	a{
 		border: 1px solid white;
 		margin-top: 15px;
@@ -491,13 +497,15 @@ header {
 .b5_wc {
 	background: #000;
 	overflow: hidden;
-	max-height: 700px;
+	max-height: 600px;
+	position: relative;
+
 	img{
+		@include adaptiv-value("height", 600, 500, 0);
 		position: relative;
 		top: 0px;
 		left: 0px;
 		object-fit: cover;
-		@include adaptiv-value("height", 600, 500, 0);
 		width: 100%;
 		z-index: 0;
 		overflow: hidden;
@@ -513,18 +521,25 @@ header {
 	}
 
 	.b5_text {
-		position: relative;
-		bottom: 300px;
 		@include adaptiv-value("left", 1580, 50, 0);
+		position: absolute;
+		bottom: 200px;
 	}
+	@media (max-width: 456px){
 
+		.b5_text{
+			text-align: center;
+		}
+	}
 }
 
 /*---------------------------------------------------B6----------------------------------------------------*/
 
 .b6_wc {
-	background-color: #000;
 	@include adaptiv-value("min-height", 500, 375, 0);
+	@include adaptiv-value("padding-top", 110, 50, 0);
+	background-color: #000;
+
 	img{
 		max-width:100%;
       height:auto;
@@ -545,11 +560,11 @@ header {
 	}
 
 	.clients_logos {
-		display: flex;
 		@include adaptiv-value("margin-top", 100, 40, 0);
-
+		display: flex;
 		justify-content: center;
 		gap: 20px;
+
 		*{
 			flex: 0 1 15%;
 			align-self:flex-end;
@@ -563,5 +578,45 @@ header {
 			flex: 0 1 30%;
 		}
 	}
+}
+/*---------------------------------------------------B7----------------------------------------------------*/
+
+.b7_wc {
+
+	img{
+		@include adaptiv-value("height", 600, 450, 0);
+		position: relative;
+		top: 0px;
+		left: 0px;
+		object-fit: cover;
+		width: 100%;
+		z-index: 0;
+		overflow: hidden;
+		object-position: center;
+	}
+
+	p{
+		margin-top: 5px;
+	}
+
+	.b7_c{
+		position: relative;
+	}
+
+	.b7_text {
+		@include adaptiv-value("left", 1200, 75, 0);
+		position: absolute;
+		bottom: 250px;
+		width: 261px;
+		color: #C0C0C0;
+	}
+
+	@media (max-width: 456px){
+		.b7_text{
+			text-align: center;
+		}
+	}
 
 }
+
+/*---------------------------------------------------B8----------------------------------------------------*/
