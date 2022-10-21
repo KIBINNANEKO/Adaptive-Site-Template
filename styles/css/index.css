@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
@@ -130,6 +131,14 @@ html .main, body .main {
   background-color: white;
 }
 
+@keyframes slidein {
+  from {
+    right: 10px;
+  }
+  to {
+    right: 330px;
+  }
+}
 /*--------------------------------------------MIXIN----------------------------------------------*/
 /*---------------------------------------------------HEADER----------------------------------------------------*/
 header {
@@ -206,7 +215,7 @@ header .menu_button {
 }
 header .menu_button span {
   width: 40px;
-  height: 2px;
+  height: 1px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -615,4 +624,102 @@ header .menu li {
 }
 .b8_wc .b8_text {
   padding-top: calc(50px + 63 * ((100vw - 375px) / 1545));
+}
+
+/*---------------------------------------------------FOOTER----------------------------------------------------*/
+.footer {
+  background-color: #000;
+  color: #FFFFFF;
+  padding: 100px 0px;
+}
+.footer a {
+  color: white;
+}
+.footer p, .footer h4 {
+  color: #C0C0C0;
+}
+.footer .footer_logo {
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer .top_footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_list {
+  display: flex;
+  gap: 45px;
+}
+.footer .footer_list * {
+  margin-bottom: 10px;
+}
+@media (max-width: 528px) {
+  .footer .footer_list {
+    gap: 18px;
+  }
+}
+.footer h3 {
+  padding-top: 36px;
+}
+.footer h4 {
+  padding-bottom: 36px;
+}
+.footer .line {
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+.footer .footer_main {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_main .fm_text {
+  flex: 0 0 65%;
+}
+.footer .footer_main .switch {
+  align-self: center;
+  flex: 1 1 35%;
+}
+.footer .footer_main .switch div {
+  height: 52px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  position: relative;
+}
+.footer .footer_main .switch div:hover div {
+  width: 90%;
+}
+.footer .footer_main .switch div div {
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 2s;
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 15%;
+  height: 30px;
+  background: #000000;
+  border-radius: 11px;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .footer .footer_main .switch div {
+    display: none;
+  }
+}
+.footer .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+.footer .© {
+  display: inline-block;
+  margin-right: 7px;
+}
+.footer .networks {
+  display: flex;
+  gap: 20px;
 }
