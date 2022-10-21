@@ -269,7 +269,7 @@ header {
 
 	h2{
 		@include adaptiv-value("margin-top", 543, 200, 0);
-		@include adaptiv-value("font-size", 14, 12, 0);
+		font-size: 14px;
 		@include adaptiv-value("line-height", 20, 0, 0);
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -393,12 +393,12 @@ header {
 /*---------------------------------------------------B3----------------------------------------------------*/
 
 .b3_wc{
-	@include adaptiv-value("height", 600, 350, 0);
+	@include adaptiv-value("height", 600, 450, 0);
 	position: relative;
 	background-color: #000;
 
 	img{
-		@include adaptiv-value("height", 600, 350, 0);
+		@include adaptiv-value("height", 600, 450, 0);
 		position: relative;
 		top: 0px;
 		left: 0px;
@@ -501,7 +501,7 @@ header {
 	position: relative;
 
 	img{
-		@include adaptiv-value("height", 600, 500, 0);
+		@include adaptiv-value("height", 600, 450, 0);
 		position: relative;
 		top: 0px;
 		left: 0px;
@@ -523,7 +523,7 @@ header {
 	.b5_text {
 		@include adaptiv-value("left", 1580, 50, 0);
 		position: absolute;
-		bottom: 200px;
+		bottom: 250px;
 	}
 	@media (max-width: 456px){
 
@@ -620,3 +620,34 @@ header {
 }
 
 /*---------------------------------------------------B8----------------------------------------------------*/
+
+.b8_wc {
+	@include adaptiv-value("height", 414, 300, 0);
+	background: #000;
+	text-align: center;
+	
+	h2{
+		@include adaptiv-value("font-size", 40, 30, 0);
+		@include adaptiv-value("line-height", 42, 32, 0);
+		color: #FFFFFF;
+	}
+
+	h3{
+		@include adaptiv-value("font-size", 24, 18, 0);
+		margin-top: 12px;
+		margin-bottom: 18px;
+		line-height: 30px;
+		color: #C0C0C0;
+	}
+
+	.circle_button{
+		display: block;
+		width: 154px;
+		margin: 0 auto;
+		
+	}
+
+	.b8_text {
+		@include adaptiv-value("padding-top", 113, 50, 0);
+	}
+}

@@ -284,7 +284,7 @@ header .menu li {
 }
 .b_1wc h2 {
   margin-top: calc(200px + 343 * ((100vw - 375px) / 1545));
-  font-size: calc(12px + 2 * ((100vw - 375px) / 1545));
+  font-size: 14px;
   line-height: calc(0px + 20 * ((100vw - 375px) / 1545));
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -397,12 +397,12 @@ header .menu li {
 
 /*---------------------------------------------------B3----------------------------------------------------*/
 .b3_wc {
-  height: calc(350px + 250 * ((100vw - 375px) / 1545));
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
   position: relative;
   background-color: #000;
 }
 .b3_wc img {
-  height: calc(350px + 250 * ((100vw - 375px) / 1545));
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
   position: relative;
   top: 0px;
   left: 0px;
@@ -490,7 +490,7 @@ header .menu li {
   position: relative;
 }
 .b5_wc img {
-  height: calc(500px + 100 * ((100vw - 375px) / 1545));
+  height: calc(450px + 150 * ((100vw - 375px) / 1545));
   position: relative;
   top: 0px;
   left: 0px;
@@ -510,7 +510,7 @@ header .menu li {
 .b5_wc .b5_text {
   left: calc(50px + 1530 * ((100vw - 375px) / 1545));
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
 }
 @media (max-width: 456px) {
   .b5_wc .b5_text {
@@ -591,3 +591,28 @@ header .menu li {
 }
 
 /*---------------------------------------------------B8----------------------------------------------------*/
+.b8_wc {
+  height: calc(300px + 114 * ((100vw - 375px) / 1545));
+  background: #000;
+  text-align: center;
+}
+.b8_wc h2 {
+  font-size: calc(30px + 10 * ((100vw - 375px) / 1545));
+  line-height: calc(32px + 10 * ((100vw - 375px) / 1545));
+  color: #FFFFFF;
+}
+.b8_wc h3 {
+  font-size: calc(18px + 6 * ((100vw - 375px) / 1545));
+  margin-top: 12px;
+  margin-bottom: 18px;
+  line-height: 30px;
+  color: #C0C0C0;
+}
+.b8_wc .circle_button {
+  display: block;
+  width: 154px;
+  margin: 0 auto;
+}
+.b8_wc .b8_text {
+  padding-top: calc(50px + 63 * ((100vw - 375px) / 1545));
+}
